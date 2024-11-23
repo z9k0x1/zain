@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Copy HTML Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        textarea {
+            width: 90%;
+            height: 300px;
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function copyToClipboard() {
+            const textArea = document.getElementById("code");
+            textArea.select();
+            document.execCommand("copy");
+            alert("تم نسخ النص بنجاح!");
+        }
+    </script>
+</head>
+<body>
+    <h1>نسخ الكود بسهولة</h1>
+    <textarea id="code" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cell Alignments</title>
+<style>
+td { height: 100px; }
+</style>
+</head>
+<body>
+<table border="1" style="padding: 8px; width: 100%;">
+<tr>
+<th><br /></th>
+<th>Left</th>
+<th>Centered</th>
+<th>Right</th>
+</tr>
+<tr>
+<th>Top</th>
+<td style="text-align: left; vertical-align: top;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+<td style="text-align: center; vertical-align: top;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+<td style="text-align: right; vertical-align: top;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+</tr>
+<tr>
+<th>Centered</th>
+<td style="text-align: left; vertical-align: middle;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+<td style="text-align: center; vertical-align: middle;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+<td style="text-align: right; vertical-align: middle;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+</tr>
+<tr>
+<th>Bottom</th>
+<td style="text-align: left; vertical-align: bottom;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+<td style="text-align: center; vertical-align: bottom;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+<td style="text-align: right; vertical-align: bottom;">
+    <img src="1.jpg" alt="" width="200" height="150" />
+</td>
+</tr>
+</table>
+</body>
+</html>
+    </textarea>
+    <button onclick="copyToClipboard()">نسخ النص</button>
+</body>
+</html>
